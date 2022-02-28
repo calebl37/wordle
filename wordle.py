@@ -85,7 +85,7 @@ def getHint(actual, guess):
     for k in not_exact:
         if guess[k] in actualNoExact:
             hintChars[k] = "Y"
-            actual = actualNoExact.replace(guess[k], "")
+            actualNoExact = actualNoExact.replace(guess[k], "")
               
     hint = ""
     for char in hintChars:
