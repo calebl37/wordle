@@ -20,3 +20,9 @@
 
 -requires the packages pandas (https://pandas.pydata.org/docs/getting_started/install.html) and discord.py (https://discordpy.readthedocs.io/en/stable/intro.html)
 
+Commands:
+
+#play -- starts a game
+#quit -- end current game (counts as a loss)
+#stat -- get personal wins, losses, and success rate 
+#statall -- get all users wins, losses, and success rates, ranked in descending order by success rate
