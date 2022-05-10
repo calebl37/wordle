@@ -59,7 +59,7 @@ def text_to_word_list(text):
   return clean_list
 
 #initializing the word bank
-wordle_txt = load_text("wordleBank.txt")
+wordle_txt = load_text(os.path.dirname(os.path.realpath(__file__)) + "\\wordleBank.txt")
 wordle_list = text_to_word_list(wordle_txt)
 
 class Player:
@@ -216,15 +216,17 @@ def load_existing_data(path):
         user_info.append(Player(name, wins, losses))
     return user_info
 
+#relative path to the log
+logPath = os.path.dirname(os.path.realpath(__file__)) + "\\wordleLog.txt"
 #intializes all player objects based on the log, which stores game records even while offline
-user_info = load_existing_data("wordlelog.txt")
+user_info = load_existing_data(logPath)
 
 #only one user can play a game of Wordle at a time. This pointer tracks who that user is
 whoPlaying = None
 
 #overwrites the log with updated player stats
 def updateLog():
-    with open("wordlelog.txt", 'w') as file:
+    with open(logPath, 'w') as file:
         for playerObj in user_info:
             file.write(playerObj.summarize() + "\n")
 
