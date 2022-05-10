@@ -6,6 +6,14 @@
 
 -wordle in python (text based)
 
+in hints:
+
+G = green square
+
+Y = yellow square
+
+B = grey/black square
+
 -interact with a console to play
 
 -requires a python terminal
