@@ -3,6 +3,7 @@ import time
 from discord.ext import commands
 import random
 import pandas as pd
+import os
 
 #The id for this bot - it is a secret, so you can either make your own or contact me for the token to use mine.
 TOKEN = ""
