@@ -1,4 +1,3 @@
-from cmath import log10
 import random
 
 # Loads in a text file, ignoring any lines that start with
@@ -48,7 +47,7 @@ def text_to_word_list(text):
   return clean_list
 
 
-wordle_txt = load_text("C:\\Users\\18572\\Desktop\\SapphireServer\\wordleBank.txt")
+wordle_txt = load_text(os.path.dirname(os.path.realpath(__file__)) + "\\wordleBank.txt")
 wordle_list = text_to_word_list(wordle_txt)
 
 
