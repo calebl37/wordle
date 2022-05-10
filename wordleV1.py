@@ -65,12 +65,12 @@ def getValidGuess(guessNumber, used):
 #using the offical rules of Wordle, compares _guess_ to _actual_
 #and returns a sequence of 5 colored squares based on how close they are
 def getHint(actual, guess):
-    hintChars = ["⬜"] * 5
+    hintChars = ["B"] * 5
     not_exact_indices = [0,1,2,3,4]
     #check the exact matches 
     for i in range(5):
         if guess[i] == actual[i]:
-            hintChars[i] = "🟩"
+            hintChars[i] = "G"
             not_exact_indices.remove(i)
 
     #remove exact matches from the answer 
@@ -81,7 +81,7 @@ def getHint(actual, guess):
     #check the indirect matches (once the exact matches have been removed)
     for k in not_exact_indices:
         if guess[k] in actualNoExact:
-            hintChars[k] = "🟨"
+            hintChars[k] = "Y"
             actualNoExact = actualNoExact.replace(guess[k], "", 1)
     hint = ""
     for char in hintChars:
