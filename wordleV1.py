@@ -1,4 +1,5 @@
 import random
+import os
 
 # Loads in a text file, ignoring any lines that start with
 # a pound sign '#'.
