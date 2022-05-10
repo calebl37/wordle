@@ -3,7 +3,8 @@
 #The programs in this repo use the above rules
 
 # wordleV1
-wordle in python (text based):
+
+-wordle in python (text based)
 
 -interact with a console 
 
