@@ -18,5 +18,5 @@
 
 -once you start a game, the bot will prompt you for a guess, you enter one, and it will print out the hint, which continues until the game ends
 
--requires the packages pandas(https://pandas.pydata.org/docs/getting_started/install.html) and discord.py (https://discordpy.readthedocs.io/en/stable/intro.html)
+-requires the packages pandas (https://pandas.pydata.org/docs/getting_started/install.html) and discord.py (https://discordpy.readthedocs.io/en/stable/intro.html)
 
